@@ -1,0 +1,30 @@
+.txt-red{
+    color: darkred;
+}
+.txt-large{
+    font-size: 32px;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.flex li{
+    list-style: none;
+    margin:0 12px;
+}
+nav{
+    width: 100vw;
+    height: 10vw;
+    background-color: lightgray;
+}
+nav ul {
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+.tryCSS{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

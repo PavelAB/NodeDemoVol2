@@ -1,0 +1,13 @@
+<%- include('./shared/header')%>
+    <h1>Bienvenue a la page d'accueil</h1>
+    <h2> Nous somme le <%= today %> </h2>
+    <ul>
+        <% for(const trainer of trainers) { %>
+            <li> <%=trainer.firstname%> <%= trainer.lastname%> </li>
+        <% } %>    
+    </ul>
+
+    <a href="/contact">Contactez-moi 🗨</a>
+</body>
+
+</html>

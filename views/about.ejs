@@ -1,0 +1,14 @@
+<%- include('./shared/header')%>
+<div >
+    <h1 >About us</h1>
+    <ul >
+        <% for(const personne of personnes) { %>
+            <li> <%=personne.firstname%> <%= personne.lastname%> </li>
+        <% } %>    
+    </ul>
+    
+</div>
+<img style="margin-left: auto; margin-right: auto; " src="/images/undraw_Team_page_re_cffb.png" alt="What it is? "/>
+</body>
+
+</html>
