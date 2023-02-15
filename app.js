@@ -157,8 +157,7 @@ const app = http.createServer((req,res)=>{
     }
     else if (requestUrl==='/about'){
         if(requestMethod==='GET'){
-            //contact page
-            console.log("Bienvenue sur la Contact page");
+
             const personnes = [
                 {firstname:'A',lastname:'First',genre:'M',birthdate:new Date(1990,1,1),cours:["Math","Bio"]},
                 {firstname:'B',lastname:'Second',genre:'F',birthdate:new Date(2000,2,2),cours:["Math","Chimie"]},
@@ -177,7 +176,6 @@ const app = http.createServer((req,res)=>{
                     console.log(err);
                     return;
                 }
-                console.log("Rendu de la page contact");
                 res.writeHead(200,{
                     "Content-type": 'text/html'})
                 res.end(render);

@@ -3,12 +3,27 @@
     <h1 >About us</h1>
     <ul >
         <% for(const personne of personnes) { %>
-            <li> <%=personne.firstname%> <%= personne.lastname%> </li>
-        <% } %>    
+            <% if(personne.genre==='F') { %>
+                <li > 
+                    <img style="height: 50px; width: 50px;" src="/images/undraw_Female_avatar_efig.png" alt="F "/>
+                    <p class="rose"><%=personne.firstname%> <%= personne.lastname%></p>
+                    <%- include('./shared/test', {personne: personne})%>
+                </li>
+            <% } %>
+            <% if(personne.genre==='M') { %>
+                <li >
+                    
+                    <img style="height: 50px; width: 50px;" src="/images/undraw_Male_avatar_g98d.png" alt="F "/>
+                    <p class="bleu"><%=personne.firstname%> <%= personne.lastname%></p> 
+                    <%- include('./shared/test', {personne: personne})%>
+                    
+                </li>
+            <% } %>
+         <% } %>    
     </ul>
     
 </div>
-<img style="margin-left: auto; margin-right: auto; " src="/images/undraw_Team_page_re_cffb.png" alt="What it is? "/>
+
 </body>
 
 </html>
